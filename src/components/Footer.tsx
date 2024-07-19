@@ -15,14 +15,14 @@ function Footer() {
           />
           <p>whatsapp</p>
         </div>
-        <h2 className="logo">
+        <h2 className="footer_logo">
           CODE
           <br />
           <span>ZONE</span>
         </h2>
         <div>
           <p>كلية codezone</p>
-          <p style={{fontSize: 25}}>0553078824</p>
+          <p style={{ fontSize: 25 }}>0553078824</p>
         </div>
       </div>
       <div className="junior_bootcamp_btn">

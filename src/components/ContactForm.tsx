@@ -8,15 +8,22 @@ function ContactForm() {
   return (
     <div className="contact_container">
       <div className="content">
-        <h2>دورة واحدة وانت في الهايتك!</h2>
-        <h2>كورس برمجة تطبيقات ومواقع مهني شامل</h2>
-        <p>من الصفر وحتى الاحتراف</p>
-        <Image
-          src={Images.codezoneBI1()}
-          alt="codezone"
-          className="codezoneBI1"
-          draggable={false}
-        />
+        <h2 className="content_txt1">دورة واحدة وانت في الهايتك!</h2>
+        <h2 className="content_txt2">كورس برمجة تطبيقات ومواقع مهني شامل</h2>
+        <div>
+          <p className="content_txt3">من الصفر وحتى الاحتراف</p>
+          <Image
+            src={Images.codezoneBI1()}
+            alt="codezone"
+            className="codezoneBI1"
+            draggable={false}
+          />
+          <Image 
+            src={Images.codeZoneBT2()}
+            alt="codezone"
+            className="codezoneBI2"
+          />
+        </div>
       </div>
       <form>
         <div id="form_container">

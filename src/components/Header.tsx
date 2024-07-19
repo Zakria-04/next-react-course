@@ -7,7 +7,7 @@ function Header() {
     <div>
       <header>
         <div id="logo_container">
-          <Image src={Images.logo()} alt="code zone" width={150} height={150} />
+          <Image src={Images.logo()} alt="code zone" className="logo" />
         </div>
       </header>
     </div>

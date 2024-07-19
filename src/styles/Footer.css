@@ -10,11 +10,11 @@
     align-items: center;
     padding-top: 10rem;
 }
-.logo {
+.footer_logo {
   text-align: center;
   color: #ffc94a;
 }
-.logo span {
+.footer_logo   span {
   color: #fff;
   font-weight: 300;
 }
