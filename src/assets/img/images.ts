@@ -10,7 +10,11 @@ const Images = {
   checkMark: () => require("./check-mark.png"),
   lightBulb: () => require("./light_bulb.png"),
   examResult: () => require("./exam-results.png"),
-  coding: () => require('./coding.png'),
-  locations: () => require('./locations.png')
+  coding: () => require("./coding.png"),
+  locations: () => require("./locations.png"),
+  group: () => require("./group.png"),
+  training: () => require("./training.png"),
+  upload: () => require("./upload.png"),
+  checkBox: () => require("./check-box.png"),
 };
 export default Images;

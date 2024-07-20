@@ -1,0 +1,17 @@
+.main_video_container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.codezone_main_video {
+  width: 50rem;
+  height: 30rem;
+}
+.test {
+  border: 10px solid rgba(19, 75, 112, .6);
+  border-radius: 8px;
+  display: flex;
+  width: max-content;
+  box-shadow: 8px 6px 10px #000;
+}

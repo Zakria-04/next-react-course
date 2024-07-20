@@ -1,6 +1,7 @@
 #context {
   text-align: center;
   margin-top: 5rem;
+  margin-bottom: 4rem;
 }
 #context_title {
   font-size: 40px;
@@ -39,4 +40,27 @@
 }
 .location_img {
     text-align: center;
+}
+.ducational_path {
+  background-color: rgb(63, 162, 246);
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  line-height: 2;
+  margin-top: 10rem;
+}
+.ducational_path_img {
+  background-color: #fff;
+}
+.ducational_path_p {
+  font-size: 18px;
+  width: 250px;
+}
+.ducational_path_p span {
+  font-weight: 600;
+}
+.ducational_path_info {
+  text-align: center;
+  color: #134B70;
+  margin-top: 5rem;
 }
