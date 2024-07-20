@@ -12,34 +12,34 @@
   line-height: 2.5;
 }
 .context_images {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 .about_text {
-    font-size: 30px;
-    text-align: center;
-    line-height: 2.8;
-    margin-top: 3rem;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.8;
+  margin-top: 3rem;
 }
 .about_p {
-    text-align: center;
-    font-size: 20;
-    margin-bottom: 5rem;
+  text-align: center;
+  font-size: 20;
+  margin-bottom: 5rem;
 }
 .location_title {
-    text-align: center;
-    line-height: 2;
-    margin-top: 3rem;
-    font-size: 30px;
+  text-align: center;
+  line-height: 2;
+  margin-top: 3rem;
+  font-size: 30px;
 }
 .location_title span {
-    font-size: 20px;
-    color: #058305;
+  font-size: 20px;
+  color: #058305;
 }
 .location_img {
-    text-align: center;
+  text-align: center;
 }
 .ducational_path {
   background-color: rgb(63, 162, 246);
@@ -61,11 +61,10 @@
 }
 .ducational_path_info {
   text-align: center;
-  color: #134B70;
+  color: #134b70;
   margin-top: 5rem;
 }
 .ducational_path_info_imgs {
-
 }
 .ducational_path_info_backend {
   display: flex;
@@ -76,4 +75,66 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.info_image_container {
+  margin-left: 20px;
+}
+.codezoneBI3 {
+  background-image: url(../assets/img/codezoneBI3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  margin-top: 5rem;
+}
+.codezoneBI3_text {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  font-size: 70px;
+  letter-spacing: 8px;
+}
+.codezone_students {
+  text-align: center;
+}
+.codezone_students_text {
+  font-size: 25px;
+  margin-top: 5rem;
+}
+.video_reviow_sm {
+  width: 25rem;
+  height: 15rem;
+  margin-left: 25px;
+  margin-top: 3rem;
+  border: 10px solid rgba(19, 75, 112, 0.6);
+  border-radius: 8px;
+  box-shadow: 8px 6px 15px #000;
+}
+.video_reviow_lg {
+  width: 35rem;
+  height: 20rem;
+  margin-left: 25px;
+  margin-top: 2rem;
+  border: 10px solid rgba(19, 75, 112, 0.6);
+  border-radius: 8px;
+  box-shadow: 8px 6px 15px #000;
+}
+.path_button {
+  background-color: #134b70;
+
+  padding: 15px;
+  color: #fff;
+  margin-top: 5rem;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  opacity: 0.75;
+  transition: 0.5s;
+}
+.path_button:hover {
+  box-shadow: 5px 5px 15px #000;
+  transition: 0.4s;
+  opacity: 1;
 }

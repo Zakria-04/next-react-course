@@ -3,6 +3,7 @@ import "../styles/HomeBody.css";
 import Image from "next/image";
 import Images from "@/assets/img/images";
 import VideoItem from "./VideoItem";
+import ContactOffer from "./ContactOffer";
 
 function HomeBody() {
   return (
@@ -151,45 +152,49 @@ function HomeBody() {
           <h2>بالاضافة للعثور على مكان عمل بعد التخرج للملائمين!</h2>
         </div>
         <div className="ducational_path_info">
-          <h1>المسار التعليمي</h1>
+          <h1 style={{ marginBottom: "20px" }}>المسار التعليمي</h1>
           <h1>FULL STACK</h1>
-          <p>MERN STACK</p>
+          <p>(MERN STACK)</p>
           <div className="ducational_path_info_imgs">
-            <h1>Frontend</h1>
+            <h1 style={{ marginTop: "20px" }}>Frontend</h1>
             <div>
               <Image src={Images.downArrow()} alt="codezone" />
               <div className="ducational_path_info_frontend">
-                <div>
-                  <Image src={Images.react()} alt="codezone" />
+                <div className="info_image_container">
+                  <Image
+                    src={Images.react()}
+                    alt="codezone"
+                    className="info_image"
+                  />
                   <p>react</p>
                 </div>
                 <Image src={Images.rightArrow()} alt="codezone" />
-                <div>
+                <div className="info_image_container">
                   <Image src={Images.bootstrap()} alt="bootstrap" />
                   <p>Bootstrap</p>
                 </div>
                 <Image src={Images.rightArrow()} alt="codezone" />
-                <div>
+                <div className="info_image_container">
                   <Image src={Images.css()} alt="codezone" />
                   <p>CSS</p>
                 </div>
                 <Image src={Images.rightArrow()} alt="codezone" />
-                <div>
+                <div className="info_image_container">
                   <Image src={Images.html()} alt="codezone" />
                   <p>HTML</p>
                 </div>
                 <Image src={Images.rightArrow()} alt="codezone" />
-                <div>
+                <div className="info_image_container">
                   <Image src={Images.reactNative()} alt="codezone" />
                   <p>react native</p>
                 </div>
                 <Image src={Images.rightArrow()} alt="codezone" />
-                <div>
+                <div className="info_image_container">
                   <Image src={Images.javaScript()} alt="codezone" />
                   <p>Javascript</p>
                 </div>
                 <Image src={Images.rightArrow()} alt="codezone" />
-                <div>
+                <div className="info_image_container">
                   <Image src={Images.java()} alt="codezone" />
                   <p>Java</p>
                 </div>
@@ -198,24 +203,48 @@ function HomeBody() {
             <h1>Backend</h1>
             <Image src={Images.downArrow()} alt="codezone" />
             <div className="ducational_path_info_backend">
-              <div>
+              <div className="info_image_container">
                 <Image src={Images.noSQL()} alt="noSQL" />
                 <p>noSQL</p>
               </div>
               <Image src={Images.rightArrow()} alt="next path" />
-              <div>
+              <div className="info_image_container">
                 <Image src={Images.mongoDB()} alt="mongoDB" />
                 <p>mongoDB</p>
               </div>
               <Image src={Images.rightArrow()} alt="next path" />
-              <div>
+              <div
+                className="info_image_container"
+                style={{ marginRight: "20px" }}
+              >
                 <Image src={Images.node()} alt="node.js" />
                 <p>node.js</p>
               </div>
             </div>
+            <button className="path_button">معلومات عن المسار التعليمي</button>
+          </div>
+        </div>
+        <div className="codezoneBI3">
+          <h1 className="codezoneBI3_text">تذكرة دخولك إلى عالم الهايتك!</h1>
+        </div>
+        <div className="codezone_students">
+          <p className="codezone_students_text">
+            طلاب code zone
+            <br />
+            <span style={{ fontSize: "17px" }}>⭐⭐⭐⭐⭐</span>
+          </p>
+          <div>
+            <video controls className="video_reviow_sm" />
+            <video controls className="video_reviow_sm" />
+            <video controls className="video_reviow_sm" />
+          </div>
+          <div>
+            <video controls className="video_reviow_lg" />
+            <video controls className="video_reviow_lg" />
           </div>
         </div>
       </div>
+      <ContactOffer />
     </div>
   );
 }
