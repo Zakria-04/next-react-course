@@ -16,5 +16,17 @@ const Images = {
   training: () => require("./training.png"),
   upload: () => require("./upload.png"),
   checkBox: () => require("./check-box.png"),
+  react: () => require("./react.svg"),
+  reactNative: () => require("./reactnative.png"),
+  bootstrap: () => require("./bootstrap.png"),
+  java: () => require("./java.png"),
+  javaScript: () => require("./js.png"),
+  html: () => require("./html-5.png"),
+  css: () => require("./css-3.png"),
+  rightArrow: () => require("./next.png"),
+  downArrow: () => require("./down-arrow.png"),
+  node: () => require("./node-js.png"),
+  mongoDB: () => require("./mongoDB.png"),
+  noSQL: () => require("./noSQL.png"),
 };
 export default Images;

@@ -152,7 +152,68 @@ function HomeBody() {
         </div>
         <div className="ducational_path_info">
           <h1>المسار التعليمي</h1>
-          
+          <h1>FULL STACK</h1>
+          <p>MERN STACK</p>
+          <div className="ducational_path_info_imgs">
+            <h1>Frontend</h1>
+            <div>
+              <Image src={Images.downArrow()} alt="codezone" />
+              <div className="ducational_path_info_frontend">
+                <div>
+                  <Image src={Images.react()} alt="codezone" />
+                  <p>react</p>
+                </div>
+                <Image src={Images.rightArrow()} alt="codezone" />
+                <div>
+                  <Image src={Images.bootstrap()} alt="bootstrap" />
+                  <p>Bootstrap</p>
+                </div>
+                <Image src={Images.rightArrow()} alt="codezone" />
+                <div>
+                  <Image src={Images.css()} alt="codezone" />
+                  <p>CSS</p>
+                </div>
+                <Image src={Images.rightArrow()} alt="codezone" />
+                <div>
+                  <Image src={Images.html()} alt="codezone" />
+                  <p>HTML</p>
+                </div>
+                <Image src={Images.rightArrow()} alt="codezone" />
+                <div>
+                  <Image src={Images.reactNative()} alt="codezone" />
+                  <p>react native</p>
+                </div>
+                <Image src={Images.rightArrow()} alt="codezone" />
+                <div>
+                  <Image src={Images.javaScript()} alt="codezone" />
+                  <p>Javascript</p>
+                </div>
+                <Image src={Images.rightArrow()} alt="codezone" />
+                <div>
+                  <Image src={Images.java()} alt="codezone" />
+                  <p>Java</p>
+                </div>
+              </div>
+            </div>
+            <h1>Backend</h1>
+            <Image src={Images.downArrow()} alt="codezone" />
+            <div className="ducational_path_info_backend">
+              <div>
+                <Image src={Images.noSQL()} alt="noSQL" />
+                <p>noSQL</p>
+              </div>
+              <Image src={Images.rightArrow()} alt="next path" />
+              <div>
+                <Image src={Images.mongoDB()} alt="mongoDB" />
+                <p>mongoDB</p>
+              </div>
+              <Image src={Images.rightArrow()} alt="next path" />
+              <div>
+                <Image src={Images.node()} alt="node.js" />
+                <p>node.js</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
