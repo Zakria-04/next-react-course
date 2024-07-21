@@ -1,11 +1,22 @@
 import React from "react";
-import "../styles/ContactOffer.css"
+import "../styles/ContactOffer.css";
+import Image from "next/image";
+import Images from "@/assets/img/images";
 function ContactOffer() {
   return (
     <div>
       <div style={{ textAlign: "center", marginTop: "6rem" }}>
-        <h1>بدون بسيخومتري وبسنة واحدة فقط!!</h1>
-        <p>
+        <h1
+          style={{
+            wordSpacing: "10px",
+            color: "#134b70",
+            fontSize: "40px",
+            lineHeight: 2,
+          }}
+        >
+          بدون بسيخومتري وبسنة واحدة فقط!!
+        </h1>
+        <p className="offer_context_title">
           والان كلية كود زون تمنحك عرض خاص ولفترة محدودة!!
           <br />
           <span style={{ color: "#058305" }}>
@@ -14,26 +25,34 @@ function ContactOffer() {
           <br />
           (العرض فقط لل15 الاوائل)
           <br />
-          <span style={{ color: "#FF0000" }}>سارعوا في التسجيل:</span>
+          <span style={{ color: "#FF0000", fontWeight: "bold" }}>
+            سارعوا في التسجيل:
+          </span>
         </p>
       </div>
       <div className="offer_form">
+        <Image
+          src={Images.codeTyping()}
+          alt="code"
+          width={250}
+          style={{ margin: "70px" }}
+        />
         <form>
-          <h2>
+          <p className="form_title">
             لجلسة استشارة مجانية
             <br />
-            اترك تفاصيلك الان وسنتواصل معك في ال24 ساعة القريبة:
-          </h2>
+            <span>اترك تفاصيلك الان وسنتواصل معك في ال24 ساعة القريبة:</span>
+          </p>
           <label>
-            שם מלא <span>*</span>
+            שם מלא<span className="form_span">*</span>
           </label>
           <input type="text" placeholder="שם מלא" required />
           <label>
-            טלפון נייד<span>*</span>
+            טלפון נייד<span className="form_span">*</span>
           </label>
           <input type="text" placeholder="נייד" required />
           <label>
-            اختار الفرع<span>*</span>
+            اختار الفرع<span className="form_span">*</span>
           </label>
           <select required>
             <option>فرع الطيرة</option>
@@ -44,6 +63,12 @@ function ContactOffer() {
           </select>
           <button>تواصلوا معي</button>
         </form>
+        <Image
+          src={Images.codeTyping()}
+          alt="code"
+          width={250}
+          style={{ margin: "70px" }}
+        />
       </div>
     </div>
   );

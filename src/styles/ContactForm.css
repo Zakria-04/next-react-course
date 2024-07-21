@@ -1,5 +1,7 @@
+.contactForm_container {
+  background-image: url(../assets//img/backround1.jpg);
+}
 .contact_container {
-  background-image: url(../assets/img/backround1.jpg);
   height: 35rem;
   display: flex;
   justify-content: space-evenly;
@@ -58,7 +60,7 @@
   margin-right: 10rem;
 }
 .content_txt1 {
-  background-color: rgba(19, 75, 112, .8);
+  background-color: rgba(19, 75, 112, 0.8);
   width: max-content;
   font-size: 50px;
   border-radius: 5px;
@@ -74,10 +76,28 @@
   width: 40rem;
   height: 5rem;
   object-fit: cover;
-  
 }
 .codezoneBI2 {
   width: 25rem;
   height: 5rem;
   object-fit: cover;
+}
+.category_container {
+  text-align: center;
+  padding-top: 1rem;
+}
+.category_container li {
+  display: inline;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.3s;
+}
+.category_container li:hover {
+  color: #ffc94a;
+  transition: 0.3s;
+}
+.category_container a {
+  text-decoration: none;
+  margin-left: 5rem;
+  cursor: pointer;
 }

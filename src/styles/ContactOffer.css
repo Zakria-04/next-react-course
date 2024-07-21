@@ -1,5 +1,58 @@
 .offer_form {
-  text-align: center;
   margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer_form form {
+  border: 3px solid rgba(63, 162, 246, 0.4);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 50px #000000a9;
+}
+.form_title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.offer_form input {
+  width: 40rem;
+  padding: 15px;
+  margin-bottom: 40px;
+  outline: none;
 }
 
+.offer_form select {
+  width: 40rem;
+  padding: 15px;
+  outline: none;
+}
+.offer_form button {
+  display: block;
+  width: 40rem;
+  padding: 15px;
+  margin-top: 4rem;
+  background-color: #ffc94a;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}
+.offer_form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form_title span {
+  font-size: 20px;
+  font-weight: 400;
+}
+.offer_context_title {
+  color: #134b70;
+  font-size: 25px;
+  line-height: 1.9;
+}
+.form_span {
+  color: #ff0000;
+}

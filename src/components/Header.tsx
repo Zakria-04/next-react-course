@@ -4,7 +4,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div>
+    <div style={{}}>
       <header>
         <div id="logo_container">
           <Image src={Images.logo()} alt="code zone" className="logo" />

@@ -15,11 +15,12 @@ function Footer() {
           />
           <p>whatsapp</p>
         </div>
-        <h2 className="footer_logo">
+        {/* <h2 className="footer_logo">
           CODE
           <br />
           <span>ZONE</span>
-        </h2>
+        </h2> */}
+        <Image src={Images.logo()} alt="codezone" className="codezone_logo" />
         <div>
           <p>كلية codezone</p>
           <p style={{ fontSize: 25 }}>0553078824</p>
