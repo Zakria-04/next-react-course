@@ -28,7 +28,8 @@ const Images = {
   node: () => require("./node-js.png"),
   mongoDB: () => require("./mongoDB.png"),
   noSQL: () => require("./noSQL.png"),
-  codezoneBI3: () => require('./codezoneBI3.jpg'),
-  codeTyping: () => require('./Code typing-bro.png')
+  codezoneBI3: () => require("./codezoneBI3.jpg"),
+  codeTyping: () => require("./Code typing-bro.png"),
+  search: () => require("./search.png"),
 };
 export default Images;

@@ -1,0 +1,30 @@
+body {
+  background-color: #ffc94a;
+}
+.note_logo {
+  width: 150px;
+  height: 150px;
+}
+.header_container {
+  text-align: center;
+}
+#search_input {
+  padding: 10px;
+  width: 35rem;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid #134b70;
+}
+.notes_input {
+  text-align: center;
+  margin-top: 4rem;
+}
+.notes_txt_btn {
+  padding: 10px;
+  font-size: 20px;
+}
+#notes_textarea {
+    resize: none;
+    height: 5rem;
+}

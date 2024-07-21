@@ -12,10 +12,10 @@ function ContactForm() {
           <a href="#">
             <li>Juniors bootcamp</li>
           </a>
-          <a>
+          <a href="/notes">
             <li>Notes</li>
           </a>
-          <a href="#">
+          <a href="/doc">
             <li>Documention</li>
           </a>
           <a href="#">
