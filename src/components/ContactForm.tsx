@@ -1,10 +1,103 @@
+"use client";
 import Images from "@/assets/img/images";
 import { url } from "inspector";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import "../styles/ContactForm.css";
 
 function ContactForm() {
+  const [userName, setUserName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [location, setLocation] = useState("فرع الطيرة");
+  // const collectData = async (e: any) => {
+  //   e.preventDefault();
+  //   let result: any = await fetch(
+  //     "https://next-react-course-server.onrender.com/getAllUsers",
+  //     {
+  //       method: "post",
+  //       body: JSON.stringify({
+  //         userName: String,
+  //         phone: Number,
+  //         location: String,
+  //       }),
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     }
+  //   );
+  //   result = await result.json;
+  //   localStorage.setItem("user", JSON.stringify(result));
+  // };
+
+  // const getAllUsers = async () => {
+  //   fetch("https://next-react-course-server.onrender.com/getAllUsers", {
+  //     mode: "no-cors",
+  //     method: "get",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   })
+  //     .then((response) => {
+  //       if (!response.ok) {
+  //         throw new Error("Network response was not ok");
+  //       }
+  //       return response.json();
+  //     })
+  //     .then((userData) => {
+  //       console.log("User Data", userData);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error", error);
+  //     });
+  // };
+  // getAllUsers()
+
+  // const collectData = async (e: any) => {
+  //   e.preventDefault(); // so it dosnt refresh the page
+
+  //   const formData = new FormData(e.target);
+  //   const userName = formData.get('userName') as string;
+  //   const phone = Number(formData.get('phone'));
+  //   const location = formData.get('location') as string;
+
+  //   let result = await fetch("https://next-react-course-server.onrender.com/getAllUsers", {
+  //     method: "POST",
+  //     body: JSON.stringify({
+  //       userName,
+  //       phone,
+  //       location,
+  //     }),
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   });
+
+  //   result = await result.json();
+  //   localStorage.setItem("user", JSON.stringify(result));
+  // };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    // const blog = { userName, phone, location };
+    const blog = [{ user: { userName, phone, location } }];
+    console.log(blog);
+
+    await fetch(
+      "https://next-react-course-server.onrender.com/userApplication",
+      {
+        mode: "no-cors",
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(blog),
+      }
+    )
+      .then(() => {
+        console.log("new blog added");
+      })
+      .catch((err) => console.error("Error ", err));
+  };
+
   return (
     <div className="contactForm_container">
       <div className="category_container">
@@ -42,7 +135,7 @@ function ContactForm() {
             />
           </div>
         </div>
-        <form>
+        <form onSubmit={handleSubmit} method="POST">
           <div id="form_container">
             <p>
               <span style={{ color: "#FFC94A", fontSize: 23 }}>
@@ -57,15 +150,31 @@ function ContactForm() {
             <label>
               שם מלא<span>*</span>
             </label>
-            <input type="text" placeholder="שם מלא" required />
+            <input
+              type="text"
+              placeholder="שם מלא"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              required
+            />
             <label>
               טלפון נייד<span>*</span>
             </label>
-            <input type="text" placeholder="נייד" required />
+            <input
+              type="text"
+              placeholder="נייד"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
             <label>
               اختار الفرع<span>*</span>
             </label>
-            <select required>
+            <select
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
+              required
+            >
               <option>فرع الطيرة</option>
               <option>فرع حيفا</option>
               <option>فرع القدس</option>
